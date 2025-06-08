@@ -3,8 +3,8 @@
     WORKDIR /app
     
     COPY package.json package-lock.json ./
-    RUN npm ci  --save-dev @types/node
-
+    RUN npm ci
+    
     COPY . .
     
     # Build the SvelteKit app
